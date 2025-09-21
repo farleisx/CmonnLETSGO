@@ -1,0 +1,11 @@
+<textarea id="code" placeholder="Type HTML/CSS/JS"></textarea>
+<iframe id="preview"></iframe>
+<button id="run">Run Code</button>
+
+<script>
+const codeArea = document.getElementById('code');
+const preview = document.getElementById('preview');
+document.getElementById('run').addEventListener('click', ()=>{
+  preview.srcdoc = codeArea.value;
+});
+</script>
